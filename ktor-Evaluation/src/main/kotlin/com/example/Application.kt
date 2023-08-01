@@ -15,7 +15,6 @@ fun main() {
 
 fun Application.module() {
     DatabaseFactory.init()
-    redisCache.createRedisClient()
     configureSerialization()
     configureRouting()
     configureException()
